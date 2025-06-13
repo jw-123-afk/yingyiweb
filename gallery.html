@@ -13,26 +13,43 @@
 <body>
 
   <header>
-    <h1>Design Gallery</h1>
+    <div class="logo">YY</div>
     <nav>
-      <a href="profile.html">Profile</a>
-      <a href="lifestyle.html">Lifestyle</a>
-      <a href="gallery.html" class="active">Gallery</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Profile</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
     </nav>
+    <div class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </div>
+    <div class="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
   </header>
 
   <main>
-    <section class="gallery-section"><br>
-      <h2>My Design Work</h2>
+    <section class="gallery-section">
+      <div class="section-header">
+        <h2>My Design Work</h2>
+        <div class="underline"></div>
+      </div>
       <div class="gallery-grid">
         <img src="images/design1.jpg" alt="Login Screen UI">
         <img src="images/design2.jpg" alt="Responsive Homepage Layout">
+       
       </div>
     </section>
 
-    <section class="video-section"><br>
-      <h3>Video Walkthrough</h3>
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/sample" frameborder="0" allowfullscreen></iframe>
+    <section class="video-section">
+      <div class="section-header">
+        <h2>Video Walkthrough</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="video-container">
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/sample" frameborder="0" allowfullscreen></iframe>
+      </div>
     </section>
   </main>
 
