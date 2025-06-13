@@ -1,0 +1,43 @@
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #52ab98;
+    margin-bottom: 20px;
+  }
+  
+.recommender img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%; /* makes them circular */
+    border: 2px solid #52ab98;
+    margin-right: 10px;
+  }
+  
+.category-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #52ab98;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .back-to-top.visible {
+    display: block;
+  }
+  
+  

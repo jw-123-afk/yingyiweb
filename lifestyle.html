@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio - Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="maps.js" defer></script>
+    <script src="whatsapp.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My E-Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="lifestyle.html" class="active">Lifestyle</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="lifestyle-hero">
+            <div class="lifestyle-overlay">
+                <h1>My Lifestyle</h1>
+                <p>Exploring technology, travel, and personal growth</p>
+            </div>
+        </section>
+
+        <!-- Lifestyle Categories -->
+        <section class="lifestyle-categories"><br>
+            <h2>Lifestyle Categories</h2>
+            <div class="category-container">
+          
+              <div class="category-card">
+                <img src="images/lifestyle.jpg" alt="My Lifestyle" style="width: 50%; height: 350px; object-fit: cover;">
+                <h3>My Lifestyle</h3>
+                <p>I enjoy a tech-inspired lifestyle focused on balance—coding in the mornings, sketching UI ideas during breaks, and winding down with a good book or music.</p>
+              </div>
+          
+              <div class="category-card">
+                <img src="images/lif1.jpg" alt="Food" style="width: 50%; height: 400px; object-fit: cover;"><img src="images/lif2.jpg" alt="Food" style="width: 50%; height: 400px; object-fit: cover;">
+                <h3>Food</h3>
+                <p>Food fuels both my brain and creativity! I love exploring local Malaysian dishes like nasi lemak and tom yum, and I often experiment with healthy cooking on weekends.</p>
+              </div>
+          
+              <div class="category-card">
+                <img src="images/lif3.jpg" alt="Travel" style="width: 50%; height: 350px; object-fit: cover;">
+                <h3>Travel</h3>
+                <p>Traveling gives me fresh design inspiration. I document street signs, café interiors, and city layouts from trips to Penang, KL, and beyond—always thinking from a UI/UX perspective.</p>
+              </div>
+          
+              <div class="category-card">
+                <img src="images/lif4.jpg" alt="Fitness" style="width: 50%; height: 350px; object-fit: cover;">
+                <h3>Fitness</h3>
+                <p>Keeping active helps me stay focused. I follow short home workouts and campus walks daily to keep energy levels up and my mind refreshed after long screen sessions.</p>
+              </div>
+          
+              <div class="category-card">
+                <img src="images/book.jpg" alt="Books" style="width: 50%; height: 350px; object-fit: cover;">
+                <h3>Books</h3>
+                <p>From UI/UX handbooks to motivational reads, books have shaped how I design and approach problems. My recent favorite is “Don't Make Me Think” by Steve Krug.</p>
+              </div>
+          
+            </div>
+          </section>
+          
+
+        <!-- Featured Lifestyle Post -->
+        <section class="featured-post"><br>
+            <h2>Featured Post</h2>
+            <div class="post-container">
+                <div class="post-image">
+                    <img src="images/lif6.jpg" alt="How Technology Changed My Life" style="width: 50%; height: 350px; object-fit: cover;">
+                </div>
+                <div class="post-content">
+                    <h3>How Technology Changed My Life</h3>
+                    <p class="post-date">May 10, 2025</p>
+                    <p class="post-excerpt">
+                        My journey into web development began three years ago when I decided to take a leap of faith and switch careers. 
+                        What started as curiosity has evolved into a passion that shapes both my professional and personal life...
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Integration -->
+        <section class="social-media"><br>
+            <h2>Connect With Me</h2>
+            <div class="social-icons">
+                <a href="https://github.com/Yg-yi" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://wa.me/601159568894" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+            </div>
+            <div class="social-feed"><br>
+                <h3>Latest Updates</h3>
+                <div class="feed-container" id="social-feed-container">
+                    <div class="feed-item">
+                        <img src="images/lif7.jpg" alt="Instagram post" style="width: 50%; height: 350px; object-fit: cover;">
+                        <p>Morning coding session with a perfect cup of coffee ☕ #developerlife</p>
+                        <span class="feed-date">5 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section class="interactive-elements"><br>
+            <h2>Let's Interact</h2>
+            <div class="interactive-container">
+                <div class="poll-section">
+                    <h3>Quick Poll</h3>
+                    <p>What tech topic would you like me to cover next?</p>
+                    <form id="poll-form">
+                        <div class="poll-option">
+                            <input type="radio" id="option1" name="poll" value="JavaScript Frameworks">
+                            <label for="option1">JavaScript Frameworks</label>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" id="option2" name="poll" value="Responsive Design">
+                            <label for="option2">Responsive Design</label>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" id="option3" name="poll" value="Backend Development">
+                            <label for="option3">Backend Development</label>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" id="option4" name="poll" value="UI/UX Design">
+                            <label for="option4">UI/UX Design</label>
+                        </div>
+                        <button type="submit" class="btn-vote">Vote</button>
+                    </form>
+                    <div id="poll-results" class="poll-results hidden">
+                        <h4>Current Results:</h4>
+                        <div class="result-bar">
+                            <span class="result-label">JavaScript Frameworks</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;">45%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="result-label">Responsive Design</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 25%;">25%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="result-label">Backend Development</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20%;">20%</div>
+                            </div>
+                        </div>
+                        <div class="result-bar">
+                            <span class="result-label">UI/UX Design</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 10%;">10%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment-section">
+                    <h3>Leave a Comment</h3>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea id="comment" name="comment" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Comment</button>
+                    </form>
+                    <div id="comments-container">
+                        <h4>Recent Comments</h4>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span class="comment-author">John Doe</span>
+                                <span class="comment-date">May 5, 2025</span>
+                            </div>
+                            <p>Great content! I especially enjoyed your thoughts on modern web frameworks.</p>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span class="comment-author">Jane Smith</span>
+                                <span class="comment-date">May 2, 2025</span>
+                            </div>
+                            <p>Your fitness routine has inspired me to be more consistent with my workouts. Thanks for sharing!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Widget -->
+        <section class="widgets"><br>
+            <h2>Useful Widgets</h2>
+            <div class="widgets-container">
+                <div class="weather-widget">
+                    <h3>Local Weather</h3>
+                    <div id="weather-container">
+                        <div class="weather-info">
+                            <div class="weather-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <div class="weather-details">
+                                <p class="temperature">28°C</p>
+                                <p class="location">Kuala Lumpur, Malaysia</p>
+                                <p class="condition">Sunny</p>
+                            </div>
+                        </div>
+                        <div class="weather-forecast">
+                            <div class="forecast-day">
+                                <p>Mon</p>
+                                <i class="fas fa-cloud-sun"></i>
+                                <p>27°C</p>
+                            </div>
+                            <div class="forecast-day">
+                                <p>Tue</p>
+                                <i class="fas fa-cloud"></i>
+                                <p>26°C</p>
+                            </div>
+                            <div class="footer-bottom">
+                                <p>&copy; 2025 Yingyi. All rights reserved.</p>
+                            </div>
+
+                            <body>
+                                <button id="back-to-top" class="back-to-top">
+                                  <i class="fas fa-arrow-up"></i>
+                                </button>
+                              </body>

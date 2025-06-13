@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Other Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script src="script.js" defer></script>
+  <script src="maps.js" defer></script>    
+  <script src="whatsapp.js" defer></script>
+</head>
+<body>
+
+<section id="other-features" class="other-features-section">
+  <div class="container">
+    <h2 class="section-title">Additional Features</h2>
+    <p class="section-description">Explore additional tools designed to enhance your experience.</p>
+
+    <div class="features-grid">
+      <!-- Weather -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <i class="fas fa-cloud-sun"></i>
+          <h3>Weather</h3>
+        </div>
+        <div class="feature-content">
+          <p>Check the current weather in my area.</p>
+          <div id="weather-widget" class="weather-widget">
+            <div class="weather-loading">
+              <div class="spinner"></div>
+              <p>Loading weather data...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+        </div>
+        <div class="feature-content">
+          <p>Here's where I'm currently based.</p>
+          <div id="map" class="map-container"></div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <i class="fas fa-address-book"></i>
+          <h3>Contact</h3>
+        </div>
+        <div class="feature-content">
+          <div class="contact-options">
+            <a href="mailto:tehyingyi14@gmail.com" class="contact-option email">
+              <i class="fas fa-envelope"></i> <span>Email</span>
+            </a>
+            <a href="https://github.com/Yg-yi" target="_blank" class="contact-option github">
+              <i class="fab fa-github"></i> <span>GitHub</span>
+            </a>
+            <a href="https://wa.me/601159568894" target="_blank" class="contact-option whatsapp">
+              <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poll -->
+      <div class="feature-card">
+        <div class="feature-header">
+          <i class="fas fa-poll"></i>
+          <h3>Poll</h3>
+        </div>
+        <div class="feature-content">
+          <p>What do you like most about this portfolio?</p>
+          <form id="poll-form" class="poll-form">
+            <div class="poll-option">
+              <input type="radio" id="option1" name="poll" value="design" />
+              <label for="option1">Design and Layout</label>
+            </div>
+            <div class="poll-option">
+              <input type="radio" id="option2" name="poll" value="content" />
+              <label for="option2">Content and Information</label>
+            </div>
+            <div class="poll-option">
+              <input type="radio" id="option3" name="poll" value="projects" />
+              <label for="option3">Projects Showcase</label>
+            </div>
+            <div class="poll-option">
+              <input type="radio" id="option4" name="poll" value="features" />
+              <label for="option4">Interactive Features</label>
+            </div>
+            <button type="submit" class="poll-submit-btn">Vote</button>
+            <div id="poll-results" class="poll-results">
+              <p>Total votes: <span id="total-votes">0</span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Load Google Maps -->
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgXFAlumiQk-OTrzsYsCbS9Wc5--MDvrA&callback=initMap">
+</script>
+
+</body>
+</html>
